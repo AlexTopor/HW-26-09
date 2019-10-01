@@ -27,7 +27,7 @@
            
            
         }
-        .dropdown {
+        .menu {
             font-size: 50px;
             color: #ffffff;
             display: flex;
@@ -60,26 +60,49 @@
         }
 
         .dropdown:hover .dropdown-child {
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
+            display: block;
+
             
         }
 
-        .dropdown button {
+        .menu button {
             width: 200px;
             height: 200px;
             display: block;
             cursor: pointer;
+            border: none;
+            padding: 0px;
 
         }
-        .dropdown img {
+        .menu img {
             width: 200px;
             height: 200px;
             padding: 0px;
             margin: 0px;
+            display:block;
+            
+           
         }
-       
+       .piki {
+           position:absolute;
+           margin-top: 0px;
+           
+       }
+       .dicks {
+           position:absolute;
+           margin-top: 200px;
+           
+       }
+       .but2 {
+           color:white;
+           background: black;
+           font-size: 40px;
+       }
+       .but2:hover {
+           color:black;
+           background: #ffffff;
+           content: "est dva stula"
+       }
 
     </style>
 </head>
@@ -90,24 +113,27 @@
                 <img class="logo" src="logo.jpg" alt="PROCODE" title="САШ, ПОМОГИ, ПОЖАЛУЙСТА">
             </div>
         
-                    <div class="dropdown">
+                    <div class="menu">
                         
                         <button class="but1"><img src="arrow-1.jpg" alt="smotri nalevo"></button>
-                        
-                        <button class="but2" title="Я хотел сделать, чтобы, когда наводишь на среднюю кнопку,
-                        вниз выпадали фотки двух стульев. Но получается то, что получается. Как мне сделать так, как я хочу?">
-                            MAKE YOUR CHOICE WISELY
-                        </button>
-                        
-                            <div class="dropdown-child">
-                                <a href="#"><img src="Снимок.JPG" alt=""></a>
-                                <a href="#"><img src="Снимок1.JPG" alt=""></a>
+                            
+                            <div class="dropdown">
+                                <button class="but2" title="Есть два стула">
+                                    MAKE YOUR CHOICE WISELY
+                                </button>
+                                
+                                <div class="dropdown-child">
+
+                                    <button class="piki"><img src="Снимок.JPG"></button>
+                                    <button class="dicks"><img src="Снимок1.JPG"></button>
+                                </div>
                             </div>
                         
                         <button class="but3"><img src="arrow-2.png" alt="smotri napravo"></button>
-                        
-                        
+                     
                     </div>
+                        
+                    
                 
             </div>
             
